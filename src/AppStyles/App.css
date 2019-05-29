@@ -1,11 +1,88 @@
+@font-face {
+  font-family: "DINPro-Bold";
+  src: url("../assets/fonts/DINPro-Bold.eot");
+  src: url("../assets/fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/DINPro-Bold.woff") format("woff"),
+    url("../assets/fonts/DINPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../assets/fonts/ProximaNova-Bold.eot");
+  src: url("../assets/fonts/ProximaNova-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/ProximaNova-Bold.woff") format("woff"),
+    url("../assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue-Bold";
+  src: url("../assets/fonts/HelveticaNeue-Bold.eot");
+  src: url("../assets/fonts/HelveticaNeue-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/HelveticaNeue-Bold.svg") format("svg"),
+    url("../assets/fonts/HelveticaNeue-Bold.woff") format("woff"),
+    url("../assets/fonts/HelveticaNeue-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyrMedium-Italic";
+  src: url("../assets/fonts/HelveticaNeueCyr-MediumItalic.eot");
+  src: url("../assets/fonts/HelveticaNeueCyr-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/HelveticaNeueCyr-MediumItalic.woff") format("woff"),
+    url("../assets/fonts/HelveticaNeueCyr-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Medium";
+  src: url("../assets/fonts/HelveticaNeueCyr-Medium.eot");
+  src: url("../assets/fonts/HelveticaNeueCyr-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+    url("../assets/fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   background: #fff;
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.App::after {
+  content: "";
+  position: absolute;
+  width: 708px;
+  height: 782px;
+  background: url("../assets/image/content/o.svg") center center no-repeat;
+  right: 0;
+  top: 0;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  width: 657px;
+  height: 1586px;
+  background: url("../assets/image/content/o2.svg") center center no-repeat;
+  left: 0;
+  bottom: 0;
 }
 
 .Wrapper {
-  max-width: 1340px;
+  max-width: 1280px;
   width: 100%;
   height: 100%;
   margin: 0 auto;

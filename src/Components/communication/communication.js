@@ -24,7 +24,8 @@ class Communication extends Component {
           </div>
           <div>
             <p className={s.contact}>
-              Contact us hey@jsnake.io <br /> or use Telegram
+              Contact us <a href='mailto:hey@jsnake.io'>hey@jsnake.io</a>
+              <br /> or use <a>Telegram</a>
             </p>
           </div>
         </div>

@@ -13,21 +13,35 @@ class Team extends Component {
         <ul className={s.team_list}>
           <li className={s.team_list_item}>
             <div className={s.photo_box}>
-              <img className={''} src={''} alt='photo' />
+              <img
+                className={''}
+                src={require('../../assets/image/photo/IlyaHamraev.png')}
+                aria-hidden
+                alt='photo'
+              />
             </div>
             <p className={s.name}>Ilya Khamraev</p>
             <p className={s.position}>JS developer</p>
           </li>
           <li className={s.team_list_item}>
             <div className={s.photo_box}>
-              <img className={''} src={''} alt='photo' />
+              <img
+                className={''}
+                src={require('../../assets/image/photo/AndrewShatunov.png')}
+                aria-hidden
+                alt='photo'
+              />
             </div>
             <p className={s.name}>Andrew Shatunov</p>
             <p className={s.position}>DevOps engineer</p>
           </li>
           <li className={s.team_list_item}>
             <div className={s.photo_box}>
-              <img className={''} src={''} alt='photo' />
+              <img
+                className={''}
+                src={require('../../assets/image/photo/IlyaPesterev.png')}
+                alt='photo'
+              />
             </div>
             <p className={s.name}>Ilya Pesterev</p>
             <p className={s.position}>Account Manager</p>
@@ -35,7 +49,11 @@ class Team extends Component {
         </ul>
         <div className={s.teamLeader}>
           <div>
-            <img className={s.photo_box_teamLead} src={''} alt='photo' />
+            <img
+              className={s.photo_box_teamLead}
+              src={require('../../assets/image/photo/MaxBuranbaev.png')}
+              alt='photo'
+            />
             <p className={s.name}>Max Buranbaev</p>
             <p className={s.position}> Lead JS developer</p>
           </div>
