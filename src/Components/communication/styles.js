@@ -8,7 +8,37 @@ export const communication = css`
   margin-bottom: 210px;
 `
 
-export const image_contact = css``
+export const img_box = css`
+  position: relative;
+
+  &:after {
+    content: '';
+    left: -157px;
+    position: absolute;
+    bottom: -126px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(${require('../../assets/image/content/force.svg')})
+      center center no-repeat;
+  }
+
+  &:before {
+    content: '';
+    right: -173px;
+    position: absolute;
+    top: -42px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(${require('../../assets/image/content/like.svg')})
+      center center no-repeat;
+  }
+`
+
+export const image_contact = css`
+  
+`
 
 export const title = css`
   font-size: 40px;

@@ -10,7 +10,9 @@ class Header extends Component {
   render () {
     return (
       <div className={s.header}>
-        <a className={s.header_logo}>JSNAKE</a>
+        <a className={s.header_logo}>
+          <img src={require('../../assets/image/content/jsnake.svg')}  alt='logo'/>
+        </a>
         <a className={s.contacts}>Contacts</a>
         <div className={s.header_title}>
           We cook custom projects <br />

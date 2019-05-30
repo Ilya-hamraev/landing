@@ -10,8 +10,15 @@ class Communication extends Component {
   render () {
     return (
       <div className={s.communication}>
-        <div>
-          <img className={s.image_contact} src={''} alt='img' />
+        <div className={s.img_box}>
+          <iframe
+            src='https://giphy.com/embed/X5i2BoQeD9kWY'
+            width='100%'
+            height='100%'
+            frameBorder='0'
+            allowFullScreen
+            className={s.image_contact} 
+          />
         </div>
         <div>
           <p className={s.title}>We are hiring</p>

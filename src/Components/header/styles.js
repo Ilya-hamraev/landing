@@ -7,7 +7,7 @@ export const header = css`
 `
 export const header_logo = css`
   position: absolute;
-  left: -103px;
+  left: -104px;
   top: 41px;
   cursor: pointer;
   font-size: 30px;
@@ -18,7 +18,7 @@ export const header_logo = css`
 
 export const contacts = css`
   position: absolute;
-  right: -100px;
+  right: -89px;
   top: 49px;
   cursor: pointer;
   font-size: 14px;
