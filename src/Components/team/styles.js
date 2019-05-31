@@ -4,7 +4,7 @@ import * as v from '../../AppStyles/variables'
 export const team = css`
   padding-top: 200px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 30px;
   margin-bottom: 100px;
 `
@@ -14,7 +14,7 @@ export const team_list = css`
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
   position: relative;
 `
@@ -23,6 +23,12 @@ export const team_list_item = css``
 
 export const photo_box = css`
   margin-bottom: 21px;
+  
+
+  img {
+    width: 165px;
+    height: 200px;
+  }
 `
 
 export const name = css`

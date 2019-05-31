@@ -28,7 +28,6 @@ export const projects_list__item = css`
 
 export const image_container = css`
   height: 347px;
-  // width: 555px;
   border-radius: 10px;
   overflow: hidden;
 `
@@ -36,6 +35,10 @@ export const image_container = css`
 export const img = css`
   height: 100%;
   width: 100%;
+
+  @media all and (max-width: 1200px) {
+    max-height: 300px;
+  }
 `
 
 export const description = css`

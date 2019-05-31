@@ -4,8 +4,16 @@ import * as s from './styles'
 import IlyaHamraevPhoto from '../../assets/image/photo/IlyaHamraev.png'
 import AndrewShatunovPhoto from '../../assets/image/photo/AndrewShatunov.png'
 import IlyaPesterevPhoto from '../../assets/image/photo/IlyaPesterev.png'
+import MaxBuranbaevPhoto from '../../assets/image/photo/MaxBuranbaevMini.png'
 
 class Team extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      activePerson: 'Buranbaev'
+    }
+  }
+
   render () {
     const team = [
       {
@@ -25,6 +33,12 @@ class Team extends Component {
         lastName: 'Pesterev',
         position: 'Account Manager',
         photo: IlyaPesterevPhoto
+      },
+      {
+        firstName: 'Max',
+        lastName: 'Buranbaev',
+        position: 'Lead JS developer',
+        photo: MaxBuranbaevPhoto
       }
     ]
 
@@ -33,7 +47,7 @@ class Team extends Component {
         <ul className={s.team_list}>
           {team.map(person => this.renderPerson(person))}
         </ul>
-        <div className={s.teamLeader}>
+        {/* <div className={s.teamLeader}>
           <div>
             <img
               className={s.photo_box_teamLead}
@@ -50,12 +64,25 @@ class Team extends Component {
               charts based on hightcharts.js or d3.js.
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }
 
   renderPerson ({ firstName, lastName, photo, position }) {
+    // if (lastName === this.state.activePerson) {
+
+    // } else {
+    //   return (
+    //     <li key={lastName} className={s.team_list_item}>
+    //       <div className={s.photo_box}>
+    //         <img className={''} src={photo} aria-hidden alt='photo' />
+    //       </div>
+    //       <p className={s.name}>{`${firstName} ${lastName}`}</p>
+    //       <p className={s.position}>{`${position}`}</p>
+    //     </li>
+    //   )
+    // }
     return (
       <li key={lastName} className={s.team_list_item}>
         <div className={s.photo_box}>
@@ -65,6 +92,7 @@ class Team extends Component {
         <p className={s.position}>{`${position}`}</p>
       </li>
     )
+    
   }
 }
 
