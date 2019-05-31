@@ -6,9 +6,9 @@ export const projects = css`
 `
 
 export const projects_list = css`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  display: grid;
 `
 
 export const projects_item__link = css`
@@ -28,7 +28,7 @@ export const projects_list__item = css`
 
 export const image_container = css`
   height: 347px;
-  width: 555px;
+  // width: 555px;
   border-radius: 10px;
   overflow: hidden;
 `

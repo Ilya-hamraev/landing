@@ -6,11 +6,6 @@ import AndrewShatunovPhoto from '../../assets/image/photo/AndrewShatunov.png'
 import IlyaPesterevPhoto from '../../assets/image/photo/IlyaPesterev.png'
 
 class Team extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
-  }
-
   render () {
     const team = [
       {
@@ -32,35 +27,18 @@ class Team extends Component {
         photo: IlyaPesterevPhoto
       }
     ]
-    
+
     return (
       <div className={s.team}>
         <ul className={s.team_list}>
-          {team.map(person => {
-            return (
-              <li key={person.lastName} className={s.team_list_item}>
-                <div className={s.photo_box}>
-                  <img
-                    className={''}
-                    src={person.photo}
-                    aria-hidden
-                    alt='photo'
-                  />
-                </div>
-                <p className={s.name}>{`${person.firstName} ${
-                  person.lastName
-                }`}</p>
-                <p className={s.position}>{`${person.position}`}</p>
-              </li>
-            )
-          })}
+          {team.map(person => this.renderPerson(person))}
         </ul>
         <div className={s.teamLeader}>
           <div>
             <img
               className={s.photo_box_teamLead}
               src={require('../../assets/image/photo/MaxBuranbaev.png')}
-              alt='photo'
+              alt='team leader'
             />
             <p className={s.name}>Max Buranbaev</p>
             <p className={s.position}>Lead JS developer</p>
@@ -74,6 +52,18 @@ class Team extends Component {
           </div>
         </div>
       </div>
+    )
+  }
+
+  renderPerson ({ firstName, lastName, photo, position }) {
+    return (
+      <li key={lastName} className={s.team_list_item}>
+        <div className={s.photo_box}>
+          <img className={''} src={photo} aria-hidden alt='photo' />
+        </div>
+        <p className={s.name}>{`${firstName} ${lastName}`}</p>
+        <p className={s.position}>{`${position}`}</p>
+      </li>
     )
   }
 }

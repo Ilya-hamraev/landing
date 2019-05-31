@@ -4,10 +4,14 @@ import * as v from '../../AppStyles/variables'
 export const header = css`
   padding-top: 202px;
   position: relative;
+
+  @media all and (max-width: 1200px) {
+    padding-top: 150px;
+  }
 `
 export const header_logo = css`
   position: absolute;
-  left: -104px;
+  left: -90px;
   top: 41px;
   cursor: pointer;
   font-size: 30px;
@@ -25,6 +29,14 @@ export const contacts = css`
   color: #0f0e0e;
   text-decoration: none;
   font-family: ${v.HelveticaNeueBold};
+  z-index: 10;
+  background: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
 
   &:after {
     content: '';
@@ -58,7 +70,15 @@ export const header_title = css`
       top: 15px;
       left: 0;
       z-index: -1;
+
+      @media all and (max-width: 1200px) {
+        height: 65px;
+      }
     }
+  }
+
+  @media all and (max-width: 1200px) {
+    font-size: 70px;
   }
 `
 

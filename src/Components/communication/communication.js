@@ -1,12 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import * as s from './styles'
 
-class Communication extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
-  }
-
+class Communication extends React.Component {
   render () {
     return (
       <div className={s.communication}>
@@ -17,7 +12,8 @@ class Communication extends Component {
             height='100%'
             frameBorder='0'
             allowFullScreen
-            className={s.image_contact} 
+            className={s.image_contact}
+            title='our team'
           />
         </div>
         <div>
