@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import * as s from './styles'
 
+import IlyaHamraevPhoto from '../../assets/image/photo/IlyaHamraev.png'
+import AndrewShatunovPhoto from '../../assets/image/photo/AndrewShatunov.png'
+import IlyaPesterevPhoto from '../../assets/image/photo/IlyaPesterev.png'
+
 class Team extends Component {
   constructor (props) {
     super(props)
@@ -8,44 +12,48 @@ class Team extends Component {
   }
 
   render () {
+    const team = [
+      {
+        firstName: 'Ilya',
+        lastName: 'Khamraev',
+        position: 'JS developer',
+        photo: IlyaHamraevPhoto
+      },
+      {
+        firstName: 'Andrew',
+        lastName: 'Shatunov',
+        position: 'DevOps engineer',
+        photo: AndrewShatunovPhoto
+      },
+      {
+        firstName: 'Ilya',
+        lastName: 'Pesterev',
+        position: 'Account Manager',
+        photo: IlyaPesterevPhoto
+      }
+    ]
+    
     return (
       <div className={s.team}>
         <ul className={s.team_list}>
-          <li className={s.team_list_item}>
-            <div className={s.photo_box}>
-              <img
-                className={''}
-                src={require('../../assets/image/photo/IlyaHamraev.png')}
-                aria-hidden
-                alt='photo'
-              />
-            </div>
-            <p className={s.name}>Ilya Khamraev</p>
-            <p className={s.position}>JS developer</p>
-          </li>
-          <li className={s.team_list_item}>
-            <div className={s.photo_box}>
-              <img
-                className={''}
-                src={require('../../assets/image/photo/AndrewShatunov.png')}
-                aria-hidden
-                alt='photo'
-              />
-            </div>
-            <p className={s.name}>Andrew Shatunov</p>
-            <p className={s.position}>DevOps engineer</p>
-          </li>
-          <li className={s.team_list_item}>
-            <div className={s.photo_box}>
-              <img
-                className={''}
-                src={require('../../assets/image/photo/IlyaPesterev.png')}
-                alt='photo'
-              />
-            </div>
-            <p className={s.name}>Ilya Pesterev</p>
-            <p className={s.position}>Account Manager</p>
-          </li>
+          {team.map(person => {
+            return (
+              <li key={person.lastName} className={s.team_list_item}>
+                <div className={s.photo_box}>
+                  <img
+                    className={''}
+                    src={person.photo}
+                    aria-hidden
+                    alt='photo'
+                  />
+                </div>
+                <p className={s.name}>{`${person.firstName} ${
+                  person.lastName
+                }`}</p>
+                <p className={s.position}>{`${person.position}`}</p>
+              </li>
+            )
+          })}
         </ul>
         <div className={s.teamLeader}>
           <div>
@@ -55,7 +63,7 @@ class Team extends Component {
               alt='photo'
             />
             <p className={s.name}>Max Buranbaev</p>
-            <p className={s.position}> Lead JS developer</p>
+            <p className={s.position}>Lead JS developer</p>
           </div>
           <div>
             <div className={s.title}>Max Buranbaev</div>

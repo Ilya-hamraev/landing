@@ -11,24 +11,35 @@ export const projects_list = css`
   justify-content: space-between;
 `
 
+export const projects_item__link = css`
+  text-decoration: none;
+`
+
 export const projects_list__item = css`
   width: 100%;
   height: 100%;
   max-width: 555px;
-  max-height: 347px;
-  margin-bottom: 126px;
+  margin-bottom: 62px;
 
   &:nth-of-type(2n) {
-    margin-top: 68px;
+    margin-top: 85px;
   }
 `
 
-export const image_container = css``
+export const image_container = css`
+  height: 347px;
+  width: 555px;
+  border-radius: 10px;
+  overflow: hidden;
+`
 
-export const img = css``
+export const img = css`
+  height: 100%;
+  width: 100%;
+`
 
 export const description = css`
-  padding: 30px 29px 0 29px;
+  padding: 37px 29px 0 29px;
   display: flex;
   align-items: center;
 `
@@ -37,6 +48,7 @@ export const name = css`
   font-size: 40px;
   margin-right: 20px;
   font-family: ${v.ProximaNovaBold};
+  color: #000;
 `
 
 export const time = css`
