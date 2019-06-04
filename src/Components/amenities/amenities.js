@@ -31,8 +31,8 @@ function Amenities() {
           <div className={s.custom_bg} />
           <div className={s.contacts}>
             <p>
-              Contact us <a>hey@jsnake.io</a> <br />
-              or use <a>Telegram</a>
+              Contact us <a href='mailto:hey@jsnake.io'>hey@jsnake.io</a> <br />
+              or use <a href='mailto:hey@jsnake.io'>Telegram</a>
             </p>
           </div>
         </li>

@@ -16,7 +16,7 @@ class Communication extends React.Component {
             title='our team'
           />
         </div>
-        <div>
+        <div className={s.contacts}>
           <p className={s.title}>We are hiring</p>
           <div className={s.about}>
             <p className={s.about_title}>Cool JS Developer</p>
@@ -28,7 +28,7 @@ class Communication extends React.Component {
           <div>
             <p className={s.contact}>
               Contact us <a href='mailto:hey@jsnake.io'>hey@jsnake.io</a>
-              <br /> or use <a>Telegram</a>
+              <br /> or use <a href='mailto:hey@jsnake.io'>Telegram</a>
             </p>
           </div>
         </div>

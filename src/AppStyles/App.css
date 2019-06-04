@@ -88,11 +88,18 @@
   margin: 0 auto;
   padding: 0 105px;
   box-sizing: border-box;
+  z-index: 1;
+  position: relative;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (max-width: 1050px) {
   .Wrapper {
-    
+    padding: 0px 50px;
   }
+}
 
+@media all and (max-width: 778px) {
+  .Wrapper {
+    padding: 0 10px;
+  }
 }

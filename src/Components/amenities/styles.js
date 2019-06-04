@@ -12,10 +12,19 @@ export const amenities_list = css`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 82px 27px;
+
+  @media all and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-gap: 27px 27px;
+  }
 `
 
 export const amenities_list_item = css`
   position: relative;
+
+  @media all and (max-width: 600px) {
+    text-align: center;
+  }
 `
 
 export const title = css`
@@ -24,6 +33,10 @@ export const title = css`
   line-height: 1.25;
   color: #000000;
   font-family: ${v.ProximaNovaBold};
+
+  @media all and (max-width: 1050px) {
+    font-size: 32px;
+  }
 `
 
 export const description = css`
@@ -32,6 +45,10 @@ export const description = css`
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.7);
   font-family: ${v.HelveticaNeueMedium};
+
+  @media all and (max-width: 600px) {
+    max-width: 100%;
+  }
 `
 
 export const contacts = css`
@@ -57,12 +74,27 @@ export const contacts = css`
     height: 7px;
     background: url(${require('../../assets/image/content/combined-shape.svg')})
       center center no-repeat;
+
+    @media all and (max-width: 600px) {
+      display: none;
+    }
   }
 
   p {
     position: absolute;
     left: 75px;
     top: 55px;
+
+
+    @media all and (max-width: 778px) {
+      left: 46px;
+      top: 39px;
+    }
+
+    @media all and (max-width: 600px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     a {
       position: relative;
@@ -83,6 +115,17 @@ export const contacts = css`
       }
     }
   }
+
+  @media all and (max-width: 778px) {
+    max-width: 100%;
+    background-size: contain;
+  }
+
+  @media all and (max-width: 600px) {
+    background-position-x: 50%;
+    transfrom: translateY(-50%);
+  }
+
 `
 
 export const custom_bg = css`

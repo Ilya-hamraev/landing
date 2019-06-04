@@ -6,6 +6,11 @@ export const communication = css`
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   margin-bottom: 210px;
+
+  @media all and (max-width: 600px) {
+    margin-bottom: 100px;
+    grid-template-columns: 1fr;
+  }
 `
 
 export const img_box = css`
@@ -21,6 +26,10 @@ export const img_box = css`
     height: 100%;
     background: url(${require('../../assets/image/content/force.svg')})
       center center no-repeat;
+
+    @media all and (max-width: 778px) {
+      display: none;
+    }
   }
 
   &:before {
@@ -33,6 +42,10 @@ export const img_box = css`
     height: 100%;
     background: url(${require('../../assets/image/content/like.svg')})
       center center no-repeat;
+
+    @media all and (max-width: 778px) {
+      display: none;
+    }
   }
 `
 
@@ -92,4 +105,14 @@ export const about_text = css`
   font-size: 14px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.7);
+
+  @media all and (max-width: 600px) {
+    max-width: 100%;
+  }
+`
+
+export const contacts = css`
+  @media all and (max-width: 600px) {
+    text-align: center;
+  }
 `

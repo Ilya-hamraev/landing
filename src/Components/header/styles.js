@@ -8,6 +8,10 @@ export const header = css`
   @media all and (max-width: 1200px) {
     padding-top: 150px;
   }
+
+  @media all and (max-width: 1050px) {
+    padding-top: 130px;
+  }
 `
 export const header_logo = css`
   position: absolute;
@@ -18,6 +22,14 @@ export const header_logo = css`
   color: #000000;
   text-decoration: none;
   font-family: ${v.DINProBold};
+
+  @media all and (max-width: 1050px) {
+    left: -35px;
+  }
+
+  @media all and (max-width: 778px) {
+    left: 0px;
+  }
 `
 
 export const contacts = css`
@@ -47,6 +59,14 @@ export const contacts = css`
     height: 2px;
     background: #eaeaea;
   }
+
+  @media all and (max-width: 1050px) {
+    right: -35px;
+  }
+
+  @media all and (max-width: 778px) {
+    right: 0px;
+  }
 `
 
 export const header_title = css`
@@ -74,11 +94,42 @@ export const header_title = css`
       @media all and (max-width: 1200px) {
         height: 65px;
       }
+
+      @media all and (max-width: 1050px) {
+        height: 57px;
+        top: 12px;
+      }
+
+      @media all and (max-width: 980px) {
+        height: 51px;
+        top: 8px;
+      }
+
+      @media all and (max-width: 600px) {
+        height: 39px;
+        top: 5px;
+      }
     }
   }
 
   @media all and (max-width: 1200px) {
     font-size: 70px;
+  }
+
+  @media all and (max-width: 1050px) {
+    font-size: 60px;
+  }
+
+  @media all and (max-width: 980px) {
+    font-size: 50px;
+  }
+
+  @media all and (max-width: 778px) {
+    font-size: 50px;
+  }
+
+  @media all and (max-width: 600px) {
+    font-size: 38px;
   }
 `
 
@@ -86,6 +137,11 @@ export const header_nav = css`
   margin-top: 89px;
   display: flex;
   flex-wrap: wrap;
+
+
+  @media all and (max-width: 600px) {
+    margin-top: 50px;
+  }
 `
 
 export const header_nav_item = css`
@@ -93,4 +149,8 @@ export const header_nav_item = css`
   font-size: 16px;
   color: #000;
   font-family: ${v.HelveticaNeueBold};
+
+  @media all and (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 `

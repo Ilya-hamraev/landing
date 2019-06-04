@@ -15,7 +15,7 @@ function Projects () {
             <div className={s.image_container}>
               <img
                 className={s.img}
-                src={require(`../../assets/image/content/boostup.svg`)}
+                src={require(`../../assets/image/content/boostup.png`)}
                 alt='project Boostup'
               />
             </div>

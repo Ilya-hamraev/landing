@@ -4,7 +4,7 @@ import * as s from './styles'
 import IlyaHamraevPhoto from '../../assets/image/photo/IlyaHamraev.png'
 import AndrewShatunovPhoto from '../../assets/image/photo/AndrewShatunov.png'
 import IlyaPesterevPhoto from '../../assets/image/photo/IlyaPesterev.png'
-import MaxBuranbaevPhoto from '../../assets/image/photo/MaxBuranbaevMini.png'
+import MaxBuranbaevPhoto from '../../assets/image/photo/MaxBuranbaev.png'
 
 class Team extends Component {
   constructor(props){

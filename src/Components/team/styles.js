@@ -3,10 +3,14 @@ import * as v from '../../AppStyles/variables'
 
 export const team = css`
   padding-top: 200px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-gap: 30px;
   margin-bottom: 100px;
+
+  @media all and (max-width: 1050px) {
+    padding-top: 100px;
+  }
 `
 
 export const team_list = css`
@@ -17,9 +21,21 @@ export const team_list = css`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
   position: relative;
+
+  @media all and (max-width: 980px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media all and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
-export const team_list_item = css``
+export const team_list_item = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 export const photo_box = css`
   margin-bottom: 21px;
