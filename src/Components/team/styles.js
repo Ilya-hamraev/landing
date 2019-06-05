@@ -42,7 +42,8 @@ export const photo_box = css`
   
 
   img {
-    width: 165px;
+    max-width: 165px;
+    width: 100%;
     height: 200px;
   }
 `

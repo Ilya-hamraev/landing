@@ -80,6 +80,10 @@ export const description = css`
     flex-direction: column;
     align-items: flex-start;
   }
+
+  @media all and (max-width: 600px) {
+    padding: 0px;
+  }
 `
 
 export const name = css`
@@ -90,6 +94,10 @@ export const name = css`
 
   @media all and (max-width: 778px) {
     font-size: 30px;
+  }
+
+  @media all and (max-width: 600px) {
+    font-size: 23px;
   }
 `
 

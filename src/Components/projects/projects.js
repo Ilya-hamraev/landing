@@ -34,6 +34,7 @@ function Projects() {
           >
             <div className={s.image_container}>
               <video
+                className={s.img}
                 src="https://media.giphy.com/media/RmrjX0CnxmHug/giphy.mp4"
                 loop
                 autoPlay

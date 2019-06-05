@@ -37,6 +37,10 @@ export const title = css`
   @media all and (max-width: 1050px) {
     font-size: 32px;
   }
+
+  @media all and (max-width: 600px) {
+    font-size: 24px;
+  }
 `
 
 export const description = css`

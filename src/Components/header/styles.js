@@ -106,7 +106,7 @@ export const header_title = css`
       }
 
       @media all and (max-width: 600px) {
-        height: 39px;
+        height: 31px;
         top: 5px;
       }
     }
@@ -129,7 +129,7 @@ export const header_title = css`
   }
 
   @media all and (max-width: 600px) {
-    font-size: 38px;
+    font-size: 31px;
   }
 `
 

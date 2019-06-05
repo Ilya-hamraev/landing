@@ -15,6 +15,13 @@ export const communication = css`
 
 export const img_box = css`
   position: relative;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+
+  video {
+    width: 100%;
+  }
 
   &:after {
     content: '';
@@ -59,6 +66,10 @@ export const title = css`
   color: #000000;
   margin-bottom: 37px;
   font-family: ${v.ProximaNovaBold};
+
+  @media all and (max-width: 600px) {
+    font-size: 30px;
+  }
 `
 
 export const contact = css`
