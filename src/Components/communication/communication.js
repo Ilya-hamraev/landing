@@ -1,19 +1,15 @@
-import React from 'react'
-import * as s from './styles'
+import React from "react";
+import * as s from "./styles";
 
 class Communication extends React.Component {
-  render () {
+  render() {
     return (
       <div className={s.communication}>
         <div className={s.img_box}>
-          <iframe
-            src='https://giphy.com/embed/X5i2BoQeD9kWY'
-            width='100%'
-            height='100%'
-            frameBorder='0'
-            allowFullScreen
-            className={s.image_contact}
-            title='our team'
+          <video
+            src="https://media.giphy.com/media/X5i2BoQeD9kWY/giphy.mp4"
+            autoPlay
+            loop
           />
         </div>
         <div className={s.contacts}>
@@ -21,20 +17,19 @@ class Communication extends React.Component {
           <div className={s.about}>
             <p className={s.about_title}>Cool JS Developer</p>
             <p className={s.about_text}>
-              You have some data needs to be visualized? We can create complex
-              charts based on hightcharts.js or d3.js.
+              We find someone who can do react.js, redux, redux-saga.
             </p>
           </div>
           <div>
             <p className={s.contact}>
-              Contact us <a href='mailto:hey@jsnake.io'>hey@jsnake.io</a>
-              <br /> or use <a href='mailto:hey@jsnake.io'>Telegram</a>
+              Contact us <a href="mailto:hey@jsnake.tech">hey@jsnake.tech</a>
+              <br /> or use <a href="https://t.me/max_buranbaev">Telegram</a>
             </p>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Communication
+export default Communication;

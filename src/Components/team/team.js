@@ -1,46 +1,53 @@
-import React, { Component } from 'react'
-import * as s from './styles'
+import React, { Component } from "react";
+import * as s from "./styles";
 
-import IlyaHamraevPhoto from '../../assets/image/photo/IlyaHamraev.png'
-import AndrewShatunovPhoto from '../../assets/image/photo/AndrewShatunov.png'
-import IlyaPesterevPhoto from '../../assets/image/photo/IlyaPesterev.png'
-import MaxBuranbaevPhoto from '../../assets/image/photo/MaxBuranbaev.png'
+import IlyaHamraevPhoto from "../../assets/image/photo/IlyaHamraev.png";
+import AndrewShatunovPhoto from "../../assets/image/photo/AndrewShatunov.png";
+import IlyaPesterevPhoto from "../../assets/image/photo/IlyaPesterev.png";
+import MaxBuranbaevPhoto from "../../assets/image/photo/MaxBuranbaev.png";
+import SergeyIvanovPhoto from "../../assets/image/photo/sergey.png";
 
 class Team extends Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
-      activePerson: 'Buranbaev'
-    }
+      activePerson: "Buranbaev"
+    };
   }
 
-  render () {
+  render() {
     const team = [
       {
-        firstName: 'Ilya',
-        lastName: 'Khamraev',
-        position: 'JS developer',
+        firstName: "Ilya",
+        lastName: "Khamraev",
+        position: "JS developer",
         photo: IlyaHamraevPhoto
       },
       {
-        firstName: 'Andrew',
-        lastName: 'Shatunov',
-        position: 'DevOps engineer',
+        firstName: "Andrew",
+        lastName: "Shatunov",
+        position: "DevOps engineer",
         photo: AndrewShatunovPhoto
       },
       {
-        firstName: 'Ilya',
-        lastName: 'Pesterev',
-        position: 'Account Manager',
+        firstName: "Ilya",
+        lastName: "Pesterev",
+        position: "Account Manager",
         photo: IlyaPesterevPhoto
       },
       {
-        firstName: 'Max',
-        lastName: 'Buranbaev',
-        position: 'Lead JS developer',
+        firstName: "Max",
+        lastName: "Buranbaev",
+        position: "JS developer",
         photo: MaxBuranbaevPhoto
+      },
+      {
+        firstName: "Sergey",
+        lastName: "Ivanov",
+        position: "JS developer",
+        photo: SergeyIvanovPhoto
       }
-    ]
+    ];
 
     return (
       <div className={s.team}>
@@ -66,10 +73,10 @@ class Team extends Component {
           </div>
         </div> */}
       </div>
-    )
+    );
   }
 
-  renderPerson ({ firstName, lastName, photo, position }) {
+  renderPerson({ firstName, lastName, photo, position }) {
     // if (lastName === this.state.activePerson) {
 
     // } else {
@@ -86,14 +93,13 @@ class Team extends Component {
     return (
       <li key={lastName} className={s.team_list_item}>
         <div className={s.photo_box}>
-          <img className={''} src={photo} aria-hidden alt='photo' />
+          <img className={""} src={photo} aria-hidden alt="photo" />
         </div>
         <p className={s.name}>{`${firstName} ${lastName}`}</p>
         <p className={s.position}>{`${position}`}</p>
       </li>
-    )
-    
+    );
   }
 }
 
-export default Team
+export default Team;

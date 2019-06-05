@@ -1,22 +1,22 @@
-import React from 'react'
-import * as s from './styles'
+import React from "react";
+import * as s from "./styles";
 
-function Projects () {
+function Projects() {
   return (
     <div className={s.projects}>
       <ul className={s.projects_list}>
         <li className={s.projects_list__item}>
           <a
-            href='https://boostup.ai/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://boostup.ai/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={s.projects_item__link}
           >
             <div className={s.image_container}>
               <img
                 className={s.img}
                 src={require(`../../assets/image/content/boostup.png`)}
-                alt='project Boostup'
+                alt="project Boostup"
               />
             </div>
             <div className={s.description}>
@@ -27,19 +27,16 @@ function Projects () {
         </li>
         <li className={s.projects_list__item}>
           <a
-            href='http://www.memonews.com/en/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="http://www.memonews.com/en/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={s.projects_item__link}
           >
             <div className={s.image_container}>
-              <iframe
-                className={s.img}
-                src='https://giphy.com/embed/RmrjX0CnxmHug'
-                width='100%'
-                height='100%'
-                allowFullScreen
-                title='project MemoNews'
+              <video
+                src="https://media.giphy.com/media/RmrjX0CnxmHug/giphy.mp4"
+                loop
+                autoPlay
               />
             </div>
             <div className={s.description}>
@@ -52,16 +49,16 @@ function Projects () {
         </li>
         <li className={s.projects_list__item}>
           <a
-            href='https://dokis.ru/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://dokis.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={s.projects_item__link}
           >
             <div className={s.image_container}>
               <img
                 className={s.img}
                 src={require(`../../assets/image/content/bitmap.jpg`)}
-                alt='project Dokis'
+                alt="project Dokis"
               />
             </div>
             <div className={s.description}>
@@ -72,7 +69,7 @@ function Projects () {
         </li>
       </ul>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
