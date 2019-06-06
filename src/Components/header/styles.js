@@ -1,5 +1,5 @@
-import { css } from 'emotion'
-import * as v from '../../AppStyles/variables'
+import { css } from "emotion";
+import * as v from "../../AppStyles/variables";
 
 export const header = css`
   padding-top: 202px;
@@ -12,7 +12,7 @@ export const header = css`
   @media all and (max-width: 1050px) {
     padding-top: 130px;
   }
-`
+`;
 export const header_logo = css`
   position: absolute;
   left: -90px;
@@ -30,7 +30,7 @@ export const header_logo = css`
   @media all and (max-width: 778px) {
     left: 0px;
   }
-`
+`;
 
 export const contacts = css`
   position: absolute;
@@ -49,9 +49,8 @@ export const contacts = css`
     outline: none;
   }
 
-
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: -3px;
@@ -67,7 +66,7 @@ export const contacts = css`
   @media all and (max-width: 778px) {
     right: 0px;
   }
-`
+`;
 
 export const header_title = css`
   font-size: 80px;
@@ -81,7 +80,7 @@ export const header_title = css`
     color: #fff;
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -131,18 +130,17 @@ export const header_title = css`
   @media all and (max-width: 600px) {
     font-size: 31px;
   }
-`
+`;
 
 export const header_nav = css`
   margin-top: 89px;
   display: flex;
   flex-wrap: wrap;
 
-
   @media all and (max-width: 600px) {
     margin-top: 50px;
   }
-`
+`;
 
 export const header_nav_item = css`
   margin-right: 44px;
@@ -153,4 +151,4 @@ export const header_nav_item = css`
   @media all and (max-width: 600px) {
     margin-bottom: 20px;
   }
-`
+`;

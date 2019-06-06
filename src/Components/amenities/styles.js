@@ -1,9 +1,9 @@
-import { css } from 'emotion'
-import * as v from '../../AppStyles/variables'
+import { css } from "emotion";
+import * as v from "../../AppStyles/variables";
 
 export const amenities = css`
   margin-top: 80px;
-`
+`;
 
 export const amenities_list = css`
   margin: 0;
@@ -17,7 +17,7 @@ export const amenities_list = css`
     grid-template-columns: 1fr;
     grid-gap: 27px 27px;
   }
-`
+`;
 
 export const amenities_list_item = css`
   position: relative;
@@ -25,7 +25,7 @@ export const amenities_list_item = css`
   @media all and (max-width: 600px) {
     text-align: center;
   }
-`
+`;
 
 export const title = css`
   margin-bottom: 11px;
@@ -41,7 +41,7 @@ export const title = css`
   @media all and (max-width: 600px) {
     font-size: 24px;
   }
-`
+`;
 
 export const description = css`
   max-width: 375px;
@@ -53,10 +53,10 @@ export const description = css`
   @media all and (max-width: 600px) {
     max-width: 100%;
   }
-`
+`;
 
 export const contacts = css`
-  background: url(${require('../../assets/image/content/placeholder.svg')})
+  background: url(${require("../../assets/image/content/placeholder.svg")})
     center center no-repeat;
   background-position-x: 0px;
   background-position-y: -15px;
@@ -69,14 +69,14 @@ export const contacts = css`
   font-family: ${v.HelveticaNeueMedium};
 
   &:after {
-    content: '';
+    content: "";
     left: 27px;
     position: absolute;
     bottom: 25px;
     display: inline-block;
     width: 7px;
     height: 7px;
-    background: url(${require('../../assets/image/content/combined-shape.svg')})
+    background: url(${require("../../assets/image/content/combined-shape.svg")})
       center center no-repeat;
 
     @media all and (max-width: 600px) {
@@ -88,7 +88,6 @@ export const contacts = css`
     position: absolute;
     left: 75px;
     top: 55px;
-
 
     @media all and (max-width: 778px) {
       left: 46px;
@@ -109,11 +108,11 @@ export const contacts = css`
 
       &:after {
         position: absolute;
-        content: '';
+        content: "";
         left: 0;
         right: 0;
         bottom: -3px;
-        height: 2px;
+        height: 1px;
         background: #fff;
         opacity: 0.7;
       }
@@ -129,8 +128,7 @@ export const contacts = css`
     background-position-x: 50%;
     transfrom: translateY(-50%);
   }
-
-`
+`;
 
 export const custom_bg = css`
   position: absolute;
@@ -138,6 +136,6 @@ export const custom_bg = css`
   right: 4000px;
   height: 100%;
   width: 4000px;
-  background: url(${require('../../assets/image/content/dot-grid.svg')});
+  background: url(${require("../../assets/image/content/dot-grid.svg")});
   opacity: 0.2;
-`
+`;

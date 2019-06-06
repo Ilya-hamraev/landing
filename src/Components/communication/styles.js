@@ -1,5 +1,5 @@
-import { css } from 'emotion'
-import * as v from '../../AppStyles/variables'
+import { css } from "emotion";
+import * as v from "../../AppStyles/variables";
 
 export const communication = css`
   display: grid;
@@ -11,7 +11,7 @@ export const communication = css`
     margin-bottom: 100px;
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const img_box = css`
   position: relative;
@@ -24,15 +24,15 @@ export const img_box = css`
   }
 
   &:after {
-    content: '';
+    content: "";
     left: -157px;
     position: absolute;
     bottom: -126px;
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url(${require('../../assets/image/content/force.svg')})
-      center center no-repeat;
+    background: url(${require("../../assets/image/content/force.svg")}) center
+      center no-repeat;
 
     @media all and (max-width: 778px) {
       display: none;
@@ -40,25 +40,23 @@ export const img_box = css`
   }
 
   &:before {
-    content: '';
+    content: "";
     right: -173px;
     position: absolute;
     top: -42px;
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url(${require('../../assets/image/content/like.svg')})
-      center center no-repeat;
+    background: url(${require("../../assets/image/content/like.svg")}) center
+      center no-repeat;
 
     @media all and (max-width: 778px) {
       display: none;
     }
   }
-`
+`;
 
-export const image_contact = css`
-  
-`
+export const image_contact = css``;
 
 export const title = css`
   font-size: 40px;
@@ -70,7 +68,7 @@ export const title = css`
   @media all and (max-width: 600px) {
     font-size: 30px;
   }
-`
+`;
 
 export const contact = css`
   font-size: 16px;
@@ -87,20 +85,20 @@ export const contact = css`
 
     &:after {
       position: absolute;
-      content: '';
+      content: "";
       left: 0;
       right: 0;
       bottom: -3px;
-      height: 2px;
+      height: 1px;
       background: #000;
     }
   }
-`
+`;
 
 export const about = css`
   margin-bottom: 40px;
   font-family: ${v.ProximaNovaBold};
-`
+`;
 
 export const about_title = css`
   font-size: 18px;
@@ -108,7 +106,7 @@ export const about_title = css`
   color: #000000;
   margin-bottom: 10px;
   font-family: ${v.ProximaNovaBold};
-`
+`;
 
 export const about_text = css`
   font-family: ${v.HelveticaNeueMedium};
@@ -120,10 +118,10 @@ export const about_text = css`
   @media all and (max-width: 600px) {
     max-width: 100%;
   }
-`
+`;
 
 export const contacts = css`
   @media all and (max-width: 600px) {
     text-align: center;
   }
-`
+`;

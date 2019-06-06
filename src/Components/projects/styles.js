@@ -1,5 +1,5 @@
-import { css } from 'emotion'
-import * as v from '../../AppStyles/variables'
+import { css } from "emotion";
+import * as v from "../../AppStyles/variables";
 
 export const projects = css`
   padding-top: 120px;
@@ -15,23 +15,23 @@ export const projects = css`
   @media all and (max-width: 600px) {
     padding-top: 0;
   }
-`
+`;
 
 export const projects_list = css`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   display: grid;
-`
+`;
 
 export const projects_item__link = css`
   text-decoration: none;
-`
+`;
 
 export const projects_list__item = css`
   width: 100%;
   height: 100%;
   max-width: 555px;
-  margin-bottom: 62px;
+  margin-bottom: 50px;
 
   &:nth-of-type(2n) {
     margin-top: 85px;
@@ -44,7 +44,7 @@ export const projects_list__item = css`
   @media all and (max-width: 778px) {
     margin-bottom: 0px;
   }
-`
+`;
 
 export const image_container = css`
   height: 347px;
@@ -55,7 +55,7 @@ export const image_container = css`
   @media all and (max-width: 778px) {
     height: 200px;
   }
-`
+`;
 
 export const img = css`
   max-height: 100%;
@@ -63,12 +63,13 @@ export const img = css`
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
 
   @media all and (max-width: 1200px) {
     max-height: 300px;
   }
-`
+`;
 
 export const description = css`
   padding: 37px 29px 0 29px;
@@ -84,7 +85,7 @@ export const description = css`
   @media all and (max-width: 600px) {
     padding: 0px;
   }
-`
+`;
 
 export const name = css`
   font-size: 40px;
@@ -99,11 +100,11 @@ export const name = css`
   @media all and (max-width: 600px) {
     font-size: 23px;
   }
-`
+`;
 
 export const time = css`
   opacity: 0.5;
   font-size: 16px;
   color: #000000;
   font-family: ${v.HelveticaNeueBold};
-`
+`;
