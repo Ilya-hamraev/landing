@@ -31,7 +31,7 @@ export const projects_list__item = css`
   width: 100%;
   height: 100%;
   max-width: 555px;
-  margin-bottom: 50px;
+  margin-bottom: 13px;
 
   &:nth-of-type(2n) {
     margin-top: 85px;
@@ -72,7 +72,7 @@ export const img = css`
 `;
 
 export const description = css`
-  padding: 37px 29px 0 29px;
+  padding: 34px 29px 0 29px;
   display: flex;
   align-items: center;
 

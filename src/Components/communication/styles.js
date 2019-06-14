@@ -62,7 +62,7 @@ export const title = css`
   font-size: 40px;
   letter-spacing: normal;
   color: #000000;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   font-family: ${v.ProximaNovaBold};
 
   @media all and (max-width: 600px) {

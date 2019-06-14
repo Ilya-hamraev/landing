@@ -2,7 +2,7 @@ import { css } from "emotion";
 import * as v from "../../AppStyles/variables";
 
 export const amenities = css`
-  margin-top: 80px;
+  margin-top: 118px;
 `;
 
 export const amenities_list = css`
